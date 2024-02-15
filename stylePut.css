@@ -1,3 +1,15 @@
+:root{
+    --main-color : #ffffff;
+    --second-color : #F4F4F4;
+
+    --main-font : 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--second-color);
+    font-family: var(--main-font);  
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -77,24 +89,6 @@
     border: 1px solid #f4f4f4;
 }
 
-.container-wrapper nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid#d3d3d3;
-
-    font-family: var(--font-family);
-    font-size: 25px;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #ffffff;
-    height: 76px;
-}
-
 .category-container{
     padding: 35px 45px;
 }
@@ -117,7 +111,7 @@
 }
 
 .heading-page-text{
-    color: var(--secondary-color);
+    color: #466BF3 ;
     font-family: var(--font-family);
     font-weight: bold;
     font-size: 40px;
@@ -141,14 +135,6 @@
     gap: 15px;
 }
 
-.id-input{
-    width: 150px;
-    height: 73px;
-    padding-left: 5px;
-    font-family: var(--font-family);
-    font-weight: 500;
-}
-
 .price-input{
     width: 200px;
     height: 73px;
@@ -157,20 +143,10 @@
     font-weight: 500;
 }
 
-.stock-input{
+.total-input{
     width: 200px;
     height: 73px;
     padding-left: 5px;
-    font-family: var(--font-family);
-    font-weight: 500;
-}
-
-.description-input{
-    width: 455px;
-    height: 347px;
-    padding-left: 5px;
-    padding-top: 5px;
-
     font-family: var(--font-family);
     font-weight: 500;
 }
