@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (event) {
         event.preventDefault();
 
-        const productName = document.getElementById("inputNama").value;
-        const productPrice = document.getElementById("inputHarga").value;
-        const productTotal = document.getElementById("inputTotal").value;
+        const productName = document.getElementById("productNama").value;
+        const productPrice = document.getElementById("productHarga").value;
+        const productTotal = document.getElementById("productTotal").value;
         const productImage = document.getElementById("image-input").files[0];
 
         const formData = new FormData();
@@ -28,17 +28,17 @@ document.addEventListener("DOMContentLoaded", function () {
         formData.append('total', productTotal);
         formData.append('image', productImage);
 
-        fetch("https://3c58-2001-448a-50c2-4c22-c1fb-a0a2-5f87-d2fd.ngrok-free.app/keranjang/3", {
+        fetch("https://3c58-2001-448a-50c2-4c22-c1fb-a0a2-5f87-d2fd.ngrok-free.app/keranjang", {
             mode: "cors",
-            method: "PUT",
+            method: "POST",
             headers: {
                 "ngrok-skip-browser-warning": "true",
             },
-            body: formData,
+            body: formData
         })
         .then((res) => res.json())
         .then(data => {
-            console.log("Product updated successfully:", data);
+            console.log("Product uploaded successfully:", data);
         })
         .catch(error => {
             console.error("Error uploading product:", error);

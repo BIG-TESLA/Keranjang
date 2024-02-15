@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     function deleteProduct(productId) {
-        fetch('https://3c58-2001-448a-50c2-4c22-c1fb-a0a2-5f87-d2fd.ngrok-free.app/keranjang/$(productId)',{
+        fetch('https://3c58-2001-448a-50c2-4c22-c1fb-a0a2-5f87-d2fd.ngrok-free.app/keranjang/1',{
             mode: "cors",
             method: "DELETE",
             headers: {
