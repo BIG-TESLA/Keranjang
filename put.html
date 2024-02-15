@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUT</title>
+    <link rel="stylesheet" href="stylePut.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>   
+    <header>
+        <nav class="navbar">
+            <div class="container nav-wrapper">
+                <a href="#" class="logo">TESLA</a>
+                <div class="menu-wrapper">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#" class="menu-link">Halaman Utama</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Produk</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Hubungi Kami</a></li>
+                    </ul>
+                    <a href="#" class="btn-keranjang">Keranjang <i class='bx bx-cart'></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-wrapper">
+        <div class="category-container">
+            <div class="heading-page">
+                <a class="heading-page-text">Update Produk</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-wrapper">
+        <div class="input-container">
+            <form id="product-form">
+                <input class="name-input" id="inputNama" type="text" placeholder="Masukan nama produk">
+                <div class="container-input">
+                    <input class="price-input" type="number" id="inputHarga" placeholder="Masukan harga produk">
+                    <input class="stock-input" type="number" id="inputStok" placeholder="Masukan stok produk">
+                </div>
+                <div class="container-input">
+                    <textarea class="description-input" id="inputDeskripsi" placeholder="Masukan deskripsi produk"></textarea>
+                    
+                    <label for="image-input" id="drop-area">
+                        <input class="image-input" type="file" id="image-input" accept="image/*" hidden> 
+                        <div id="img-view">
+                            <img class="logo-upload" src="./Assets\Upload.png" alt="Logo upload">
+                            <div>
+                                <a class="logo-upload-text">Seret dan lepaskan gambar di sini</a><br>
+                                <a class="logo-upload-text"> untuk unggah gambar dari desktop!</a>
+                            </div>
+                        </div>
+                    </label>
+                </div>    
+                <div class="container-btn">
+                    <button class="cancel-btn" type="reset">CANCEL</button>
+                    <button type="submit" class="insert-btn" id="submit-btn">UPDATE</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+<script src="put.js"></script>
+</html>
