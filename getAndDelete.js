@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     })
     .then((res) => res.json())
-    .then((data) => {
-        data.data.forEach(produk => {
+    .then(({data}) => {
+        data.forEach(produk => {
             const cardContainer = document.createElement('div');
             cardContainer.classList.add('card-container');
             cardContainer.innerHTML = `
