@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         formData.append('total', productTotal);
         formData.append('image', productImage);
 
-        fetch("https://3c58-2001-448a-50c2-4c22-c1fb-a0a2-5f87-d2fd.ngrok-free.app/keranjang", {
+        fetch("https://f053-2001-448a-50c2-2390-ec5a-775c-7fe1-73eb.ngrok-free.app/keranjang", {
             mode: "cors",
             method: "POST",
             headers: {

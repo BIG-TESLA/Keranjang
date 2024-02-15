@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     function deleteProduct(productId) {
-        fetch('https://3c58-2001-448a-50c2-4c22-c1fb-a0a2-5f87-d2fd.ngrok-free.app/keranjang/1',{
+        fetch('https://f053-2001-448a-50c2-2390-ec5a-775c-7fe1-73eb.ngrok-free.app/keranjang/1',{
             mode: "cors",
             method: "DELETE",
             headers: {
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     const cardContainerWrapper = document.getElementById('card-container-wrapper');
 
-    fetch('https://3c58-2001-448a-50c2-4c22-c1fb-a0a2-5f87-d2fd.ngrok-free.app/keranjang', {
+    fetch('https://f053-2001-448a-50c2-2390-ec5a-775c-7fe1-73eb.ngrok-free.app/keranjang', {
         mode: "cors",
         headers: {
             "ngrok-skip-browser-warning": "true",
